@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Villain Dreams</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link id="fav" rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+        <link href="./style.css" rel="stylesheet">
+        <script type="module" src="windowLoad.js"></script>
+    </head>
+    <body>
+        <div class="container" id="more" style="display:none;">
+            <div class="grid-name center elem"></div>
+            <div class="grid-powerstats center elem"></div>
+            <div class="grid-appearance center elem">appearance</div>
+            <div class="grid-gender center elem"></div>
+            <div class="grid-race center elem"></div>
+            <div class="grid-height center elem"></div>
+            <div class="grid-weight center elem"></div>
+            <div class="grid-eyeColor center elem"></div>
+            <div class="grid-hairColor center elem"></div>
+            <div class="grid-biography center elem">biography</div>
+            <div class="grid-fullName center elem"></div>
+            <div class="grid-alterEgos center elem"></div>
+            <div class="grid-aliases center elem"></div>
+            <div class="grid-placeOfBirth center elem"></div>
+            <div class="grid-firstAppearance center elem"></div>
+            <div class="grid-publisher center elem"></div>
+            <div class="grid-alignment center elem"></div>
+            <div class="grid-work center elem"></div>
+            <div class="grid-connections center elem"></div>
+            <div class="grid-image center"></div>
+            <div class="grid-back center">
+                <button id="back" style="height: 50%;width: 50%;border-radius: 50px;border-color: black;">Go Back</button>
+            </div>
+
+        </div>
+        <div id="acc">
+            <nav>
+                <h1> Villain Dreams</h1>
+                <input id="search" type="text" placeholder="Search..">
+                <select name="search-select" id="search-select">
+                    <option value="name">name</option>
+                    <option value="full-name">full-name</option>
+                    <option value="race">race</option>
+                    <option value="gender">gender</option>
+                    <option value="height">height</option>
+                    <option value="weight">weight</option>
+                    <option value="place of birth">place-of-birth</option>
+                    <option value="alignment">alignment</option>
+                </select>
+                <select name="nb-pages" id="nb-pages">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">all</option>
+                </select>
+                <div id="page">
+                    <button id="left">◀</button>
+                    <p id="val">0</p>
+                    <button id="right">▶</button>
+                </div>
+            </nav>
+            <div id="superheroTable">
+                <table>
+                    <colgroup>
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: 20%;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                        <col span="1" style="width: auto;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>image</th>
+                            <th id="name">name</th>
+                            <th id="full-name">full name</th>
+                            <th id="power-stats">power stats</th>
+                            <th id="race">race</th>
+                            <th id="gender">gender</th>
+                            <th id="height">height</th>
+                            <th id="weight">weight</th>
+                            <th id="place-of-birth">place of birth</th>
+                            <th id="alignment">alignment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="superheroTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+
+

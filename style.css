@@ -1,0 +1,174 @@
+html , body {
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+    padding: 0;
+}
+
+/* acc  */
+
+#superheroTable {
+    padding-top: 10%;
+}
+
+ul{
+    list-style-type:none;
+}
+
+table {
+    width:80%;
+    margin: 0 10%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+thead tr {
+    background-color: #002998;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1vw;
+}
+
+tbody td {
+    text-align: center;
+    font-size: 1.2vw;
+}
+#power-stats {
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+tbody tr {
+    background-color: #a8a8a8;
+}
+
+h1 {
+    font-size: 30 px;
+    color : white;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    height:20%;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page {
+    display: flex;
+    flex-direction: wrap;
+    gap: 10px;
+}
+
+/* more */
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 50px 50px;
+    grid-template-areas: 
+      "grid-image . grid-back"
+      "grid-image grid-name grid-name"
+      "grid-image grid-name grid-name"
+      "grid-appearance grid-appearance grid-appearance"
+      "grid-gender grid-powerstats grid-race"
+      "grid-height grid-powerstats grid-weight"
+      "grid-eyeColor . grid-hairColor"
+      "grid-biography grid-biography grid-biography"
+      "grid-fullName grid-alterEgos grid-aliases"
+      "grid-placeOfBirth grid-firstAppearance grid-publisher"
+      ". grid-alignment ."
+      "grid-work grid-work grid-work"
+      "grid-connections grid-connections grid-connections";
+    }
+    .grid-name {
+      grid-area: grid-name;
+    }
+    .grid-powerstats {
+        grid-area: grid-powerstats;
+    }
+    .grid-appearance {
+        grid-area: grid-appearance;
+    }
+    .grid-gender {
+        grid-area: grid-gender;
+    }
+    .grid-race {
+        grid-area: grid-race;
+    }
+    .grid-height {
+        grid-area: grid-height;
+    }
+    .grid-weight {
+        grid-area: grid-weight;
+    }
+    .grid-eyeColor {
+        grid-area: grid-eyeColor;
+    }
+    .grid-hairColor {
+        grid-area: grid-hairColor;
+    }
+    .grid-biography {
+        grid-area: grid-biography;
+    }
+    .grid-fullName {
+        grid-area: grid-fullName;
+    }
+    .grid-alterEgos {
+        grid-area: grid-alterEgos;
+    }
+    .grid-aliases {
+        grid-area: grid-aliases;
+    }
+    .grid-placeOfBirth {
+        grid-area: grid-placeOfBirth;
+    }
+    .grid-firstAppearance {
+        grid-area: grid-firstAppearance;
+    }
+    .grid-publisher {
+        grid-area: grid-publisher;
+    }
+    .grid-work {
+        grid-area: grid-work;
+    }
+    .grid-connections {
+        grid-area: grid-connections;
+    }
+    .grid-alignment {
+        grid-area: grid-alignment;
+    }
+    .grid-image {
+        grid-area: grid-image;
+    }
+    .grid-back {
+        grid-area: grid-back;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        border-color: black;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .elem{
+        border-radius: 20px;
+        padding: 0px 5px;
+        border: 3px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #919191;
+    }
